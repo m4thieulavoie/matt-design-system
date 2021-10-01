@@ -1,0 +1,38 @@
+{
+  "name": "matt-design-system",
+  "version": "1.0.0",
+  "description": "Matt's personal design system",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4thieulavoie/matt-design-system.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "css",
+    "html",
+    "web",
+    "components"
+  ],
+  "author": "Mathieu Lavoie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m4thieulavoie/matt-design-system/issues"
+  },
+  "homepage": "https://github.com/m4thieulavoie/matt-design-system#readme",
+  "devDependencies": {
+    "@m4thieulavoie/linting": "0.0.12",
+    "sass-to-string": "^1.5.1",
+    "typescript": "4.4.3"
+  },
+  "dependencies": {
+    "@microsoft/fast-components": "^2.11.7",
+    "@microsoft/fast-element": "^1.5.1",
+    "@microsoft/fast-foundation": "^2.16.5"
+  }
+}
