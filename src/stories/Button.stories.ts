@@ -1,5 +1,4 @@
-import { Story, Meta } from "@storybook/web-components";
-import { Button, ButtonProps } from "./Button";
+import type { Story, Meta } from "@storybook/web-components";
 
 // More on default export: https://storybook.js.org/docs/web-components/writing-stories/introduction#default-export
 export default {
@@ -15,32 +14,11 @@ export default {
   },
 } as Meta;
 
-// More on component templates: https://storybook.js.org/docs/web-components/writing-stories/introduction#using-args
-const Template: Story<Partial<ButtonProps>> = (args) => Button(args);
+export const DefaultButton: Story = () =>
+  `<matt-theme-provider><matt-button>ah</matt-button></matt-design-system>`;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/web-components/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: "Button",
-};
+export const SecondaryButton: Story = () =>
+  `<matt-theme-provider><matt-button variant="secondary">Secondary button</matt-button></matt-design-system>`;
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "Button",
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: "large",
-  label: "Button",
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: "small",
-  label: "Button",
-};
-
-export const Test: Story<Partial<ButtonProps>> = (args) =>
-  `<matt-button>ah</matt-button>`;
+export const TertiaryButton: Story = () =>
+  `<matt-theme-provider><matt-button variant="tertiary">Tertiary button</matt-button></matt-design-system>`;

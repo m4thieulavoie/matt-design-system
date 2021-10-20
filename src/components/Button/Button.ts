@@ -1,6 +1,5 @@
 import { Button, buttonTemplate } from "@microsoft/fast-foundation";
-
-const styles = "";
+import styles from "./Button.styles.scss";
 
 const button = Button.compose({
   baseName: "button",

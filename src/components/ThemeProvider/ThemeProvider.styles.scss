@@ -1,0 +1,18 @@
+:host {
+  --spacing-none: 0;
+  --spacing-extra-tight: 0.25rem;
+  --spacing-tight: 0.5rem;
+  --spacing-default: 1rem;
+
+  --radius-none: 0;
+  --radius-small: 0.25rem;
+
+  $main-blue: #007fff;
+
+  --blue-100: #caf0f8;
+  --blue-300: #{lighten($main-blue, 10%)};
+  --blue-400: #{lighten($main-blue, 5%)};
+  --blue-500: #007fff;
+  --blue-600: #{darken($main-blue, 10%)};
+  --blue-700: #{darken($main-blue, 20%)};
+}
