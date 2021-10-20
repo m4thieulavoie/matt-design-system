@@ -4,7 +4,7 @@
   "description": "Matt's personal design system",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && npm run build-storybook && copyfiles _redirects dist",
+    "build": "tsc && npm run build-storybook && copyfiles _redirects storybook",
     "test": "npm run test",
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o storybook"
