@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/m4thieulavoie/matt-design-system#readme",
   "devDependencies": {
-    "@m4thieulavoie/linting": "0.2.3",
+    "@m4thieulavoie/linting": "0.2.4",
     "@storybook/addon-actions": "6.3.12",
     "@storybook/addon-docs": "6.3.12",
     "@storybook/addon-essentials": "6.3.12",
