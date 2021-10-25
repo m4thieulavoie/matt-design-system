@@ -3,8 +3,8 @@
     border-radius: var(--radius-small);
     box-sizing: border-box;
     border: 1px solid transparent;
-    background-color: var(--blue-500);
-    color: white;
+    background-color: var(--primary-surface);
+    color: var(--primary-text);
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -17,52 +17,61 @@
     transition: 0.3s all;
 
     &:hover {
-      background-color: var(--blue-400);
+      background-color: var(--primary-hover-surface);
     }
 
     &:active {
-      background-color: var(--blue-300);
+      background-color: var(--primary-pressed-surface);
     }
 
     &:focus-visible {
-      border-color: var(--blue-600);
-      outline: 2px solid var(--blue-100);
+      border-color: var(--primary-focus-border);
+      outline: var(--primary-outline);
     }
+  }
+}
+
+:host([size="small"]) {
+  button {
+    font-size: 0.65rem;
+    height: 1.75rem;
+    min-width: 3rem;
+    padding: var(--spacing-extra-tight) var(--spacing-small);
   }
 }
 
 :host([variant="secondary"]) button {
-  background-color: white;
-  color: var(--blue-500);
-  border-color: var(--blue-500);
+  background-color: var(--secondary-surface);
+  color: var(--secondary-text);
+  border-color: var(--secondary-border);
 
   &:hover {
-    background-color: rgba(#007fff, 0.05);
+    background-color: var(--secondary-hover-surface);
   }
 
   &:active {
-    background-color: rgba(#007fff, 0.1);
+    background-color: var(--secondary-pressed-surface);
   }
 
   &:focus-visible {
-    border-color: var(--blue-600);
-    outline: 3px solid var(--blue-100);
+    border-color: var(--secondary-focus-border);
+    outline: var(--secondary-outline);
   }
 }
 
 :host([variant="tertiary"]) button {
-  background-color: transparent;
-  color: var(--blue-500);
+  background-color: var(--tertiary-surface);
+  color: var(--tertiary-text);
 
   &:hover {
-    background-color: rgba(#007fff, 0.05);
+    background-color: var(--tertiary-hover-surface);
   }
 
   &:active {
-    background-color: rgba(#007fff, 0.1);
+    background-color: var(--tertiary-pressed-surface);
   }
 
   &:focus-visible {
-    outline: 3px solid var(--blue-100);
+    outline: var(--tertiary-outline);
   }
 }

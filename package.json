@@ -1,13 +1,16 @@
 {
-  "name": "matt-design-system",
-  "version": "1.0.0",
+  "name": "@m4thieulavoie/design-system",
+  "version": "0.0.1",
   "description": "Matt's personal design system",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && npm run build-storybook && copyfiles _redirects storybook",
-    "test": "npm run test",
+    "build": "npm run build:code && npm run build:storybook && copyfiles _redirects storybook",
     "start": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o storybook"
+    "build:code": "tsc",
+    "build:storybook": "build-storybook -o storybook",
+    "publish:patch": "npm run build && npm version patch && npm publish && git push",
+    "publish:minor": "npm run build && npm version minor && npm publish && git push",
+    "publish:major": "npm run build && npm version major && npm publish && git push"
   },
   "repository": {
     "type": "git",
@@ -38,6 +41,8 @@
     "@storybook/web-components": "6.3.12",
     "copyfiles": "2.4.1",
     "html-webpack-plugin": "5.4.0",
+    "lit-html": "^2.0.1",
+    "sass": "^1.43.3",
     "sass-loader": "12.2.0",
     "sass-to-string": "1.6.0",
     "typescript": "4.4.4"

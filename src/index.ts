@@ -1,7 +1,8 @@
 import { provideFASTDesignSystem } from "@microsoft/fast-components";
-import { Button } from "./components/Button";
-import { ThemeProvider } from "./components/ThemeProvider";
+import { Button, Anchor, ThemeProvider } from "./components";
 
-provideFASTDesignSystem()
-  .withPrefix("matt")
-  .register(ThemeProvider(), Button());
+export default function bootstrap() {
+  provideFASTDesignSystem()
+    .withPrefix("matt")
+    .register(ThemeProvider(), Button(), Anchor());
+}

@@ -1,3 +1,5 @@
+import bootstrap from "../src/index";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -8,4 +10,4 @@ export const parameters = {
   },
 };
 
-require("../src/index");
+bootstrap();

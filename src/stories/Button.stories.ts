@@ -15,10 +15,13 @@ export default {
 } as Meta;
 
 export const DefaultButton: Story = () =>
-  `<matt-theme-provider><matt-button>ah</matt-button></matt-design-system>`;
+  `<matt-theme-provider><matt-button>Default button</matt-button></matt-design-system>`;
 
 export const SecondaryButton: Story = () =>
   `<matt-theme-provider><matt-button variant="secondary">Secondary button</matt-button></matt-design-system>`;
 
 export const TertiaryButton: Story = () =>
   `<matt-theme-provider><matt-button variant="tertiary">Tertiary button</matt-button></matt-design-system>`;
+
+export const SmallButton: Story = () =>
+  `<matt-theme-provider><matt-button size="small">Small button</matt-button></matt-design-system>`;
