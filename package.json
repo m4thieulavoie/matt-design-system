@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build:code && npm run build:storybook && copyfiles _redirects storybook",
     "start": "start-storybook -p 6006",
-    "build:code": "tsc",
+    "build:code": "tsc && sass-to-string",
     "build:storybook": "build-storybook -o storybook",
     "publish:patch": "npm run build && npm version patch && npm publish && git push",
     "publish:minor": "npm run build && npm version minor && npm publish && git push",
@@ -40,6 +40,7 @@
     "@storybook/manager-webpack5": "6.3.12",
     "@storybook/web-components": "6.3.12",
     "copyfiles": "2.4.1",
+    "fs-extra": "10.0.0",
     "html-webpack-plugin": "5.4.0",
     "lit-html": "^2.0.1",
     "sass": "^1.43.3",
