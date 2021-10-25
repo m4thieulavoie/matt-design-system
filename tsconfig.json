@@ -5,7 +5,9 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "outDir": "dist",
-    "declaration": true
+    "declaration": true,
+    "target": "ES6",
+    "moduleResolution": "node"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
