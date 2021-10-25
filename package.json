@@ -1,6 +1,6 @@
 {
   "name": "@m4thieulavoie/design-system",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Matt's personal design system",
   "main": "dist/index.js",
   "scripts": {
