@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npm run build:code && npm run build:storybook && copyfiles _redirects storybook",
     "start": "start-storybook -p 6006",
+    "lint": "eslint --ext .ts, src/ && npx stylelint \"src/**/*.scss\"",
     "build:code": "tsc && sass-to-string",
     "build:storybook": "build-storybook -o storybook",
     "publish:patch": "npm run build && npm version patch && npm publish && git push",
@@ -31,7 +32,7 @@
   },
   "homepage": "https://github.com/m4thieulavoie/matt-design-system#readme",
   "devDependencies": {
-    "@m4thieulavoie/linting": "0.2.5",
+    "@m4thieulavoie/linting": "0.2.7",
     "@storybook/addon-actions": "6.4.9",
     "@storybook/addon-docs": "6.4.9",
     "@storybook/addon-essentials": "6.4.9",

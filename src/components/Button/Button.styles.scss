@@ -1,16 +1,19 @@
 :host {
+  display: inline-flex;
+  height: 2.25rem;
+
   button {
+    background-color: var(--primary-surface);
+    border: 1px solid transparent;
     border-radius: var(--radius-small);
     box-sizing: border-box;
-    border: 1px solid transparent;
-    background-color: var(--primary-surface);
     color: var(--primary-text);
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol";
-    font-weight: 600;
     font-size: 0.8rem;
+    font-weight: 600;
     height: 2.25rem;
     min-width: 4rem;
     padding: var(--spacing-extra-tight) var(--spacing-default);
@@ -32,6 +35,8 @@
 }
 
 :host([size="small"]) {
+  height: 1.75rem;
+
   button {
     font-size: 0.65rem;
     height: 1.75rem;
@@ -42,8 +47,8 @@
 
 :host([variant="secondary"]) button {
   background-color: var(--secondary-surface);
-  color: var(--secondary-text);
   border-color: var(--secondary-border);
+  color: var(--secondary-text);
 
   &:hover {
     background-color: var(--secondary-hover-surface);

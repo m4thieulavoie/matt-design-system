@@ -3,6 +3,7 @@
 :host {
   a {
     @include component();
+
     color: var(--primary-cta);
 
     &:hover {

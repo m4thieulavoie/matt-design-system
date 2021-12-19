@@ -15,13 +15,13 @@ export default {
 } as Meta;
 
 export const DefaultButton: Story = () =>
-  `<matt-theme-provider><matt-button>Default button</matt-button></matt-design-system>`;
+  `<matt-theme-provider><matt-button>Default button</matt-button></matt-theme-provider>`;
 
 export const SecondaryButton: Story = () =>
-  `<matt-theme-provider><matt-button variant="secondary">Secondary button</matt-button></matt-design-system>`;
+  `<matt-theme-provider><matt-button variant="secondary">Secondary button</matt-button></matt-theme-provider>`;
 
 export const TertiaryButton: Story = () =>
-  `<matt-theme-provider><matt-button variant="tertiary">Tertiary button</matt-button></matt-design-system>`;
+  `<matt-theme-provider><matt-button variant="tertiary">Tertiary button</matt-button></matt-theme-provider>`;
 
 export const SmallButton: Story = () =>
-  `<matt-theme-provider><matt-button size="small">Small button</matt-button></matt-design-system>`;
+  `<matt-theme-provider><matt-button size="small">Small button</matt-button></matt-theme-provider>`;

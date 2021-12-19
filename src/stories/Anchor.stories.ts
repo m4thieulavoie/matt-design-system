@@ -15,4 +15,4 @@ export default {
 } as Meta;
 
 export const DefaultButton: Story = () =>
-  `<matt-theme-provider><matt-anchor href="#">Click here!</matt-anchor></matt-design-system>`;
+  `<matt-theme-provider><matt-anchor href="#">Click here!</matt-anchor></matt-theme-provider>`;
