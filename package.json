@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/m4thieulavoie/matt-design-system#readme",
   "devDependencies": {
-    "@m4thieulavoie/linting": "0.2.11",
+    "@m4thieulavoie/linting": "0.2.12",
     "@storybook/addon-actions": "6.5.8",
     "@storybook/addon-docs": "6.5.8",
     "@storybook/addon-essentials": "6.5.8",
@@ -46,7 +46,7 @@
     "lit-html": "2.2.5",
     "sass": "1.52.3",
     "sass-loader": "13.0.0",
-    "sass-to-string": "1.6.2",
+    "sass-to-string": "1.6.3",
     "typescript": "4.7.3"
   },
   "dependencies": {
