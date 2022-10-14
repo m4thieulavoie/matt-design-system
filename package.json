@@ -43,7 +43,7 @@
     "copyfiles": "2.4.1",
     "fs-extra": "10.1.0",
     "html-webpack-plugin": "5.5.0",
-    "lit-html": "2.3.1",
+    "lit-html": "2.4.0",
     "sass": "1.55.0",
     "sass-loader": "13.1.0",
     "sass-to-string": "1.6.3",
